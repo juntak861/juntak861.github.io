@@ -1,21 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+<style>
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+button,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인 정보 웹페이지</title>
+    <title>개인 정보 입력</title>
 </head>
 <body>
-    <h1>개인 정보</h1>
-    <ul>
-        <li>이름 (한글, 영문): 한글 : 한준탁 영문 :HAN JUN TAK</li>
-        <li>이메일 주소 (학교메일): hjctime6@dongyang.ac.kr</li>
-        <li>기술스택 : HTML, 파이썬 (배우는 중)</li>
-        <li>대학정보 (학교 및 학과, 입학년도 작성): 동양미래대학교 / 컴퓨터소프트웨어공학과 ( 입학 : 2024년 ) </li>
-        <li>기술개발 경험 (진행중인 수업 관련내용, 고등학교 때 학습했던 내용) : github, 파이썬, HTML (배우는 중) </li>
-        <li>관심 기술분야 (서비스, 기술명 등): 인공지능 및 머신러닝 (Artificial Intelligence and Machine Learning)</li>
-        <li>기타 포함하고 싶은 항목 (사진 등): <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAyMTJfMjYw%2FMDAxNzA3NzQyMDc2OTgz.qHRTMalvKEB99ZofuUXl9NOG7dYMbTUDhWzpbzmd9Wkg.xS4HH6zm-_d3aLIzBk3lzOWimk7NY2npRy7O6WshdZ0g.JPEG.g_minn%2F3e51ae630fac034ebdabee8c5049505a.jpg&type=a340" width="100px" height="100px"> </li>
-    </ul>
+    <div class="container">
+        <h1>개인 정보 입력</h1>
+        <form action="#">
+            <div class="form-group">
+                <label for="name">이름 (한글, 영문):</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">이메일주소 (학교메일):</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="major">대학정보 (학교 및 학과, 입학년도 작성):</label>
+                <input type="text" id="major" name="major">
+            </div>
+            <div class="form-group">
+                <label for="tech-stack">기술스택 (다룰 수 있는 언어, 도구 등 작성):</label>
+                <textarea id="tech-stack" name="tech-stack"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="experience">기술개발 경험 (진행중인 수업 관련내용, 고등학교 때 학습했던 내용):</label>
+                <textarea id="experience" name="experience"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="interests">관심 기술분야 (서비스, 기술명 등):</label>
+                <input type="text" id="interests" name="interests">
+            </div>
+            <div class="form-group">
+                <label for="photo">기타 포함하고 싶은 항목 (사진 등):</label>
+                <input type="file" id="photo" name="photo">
+            </div>
+            <button type="submit">제출</button>
+        </form>
+    </div>
 </body>
 </html>
-
