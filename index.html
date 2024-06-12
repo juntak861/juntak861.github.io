@@ -4,7 +4,7 @@
 <style>
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
     margin: 0;
     padding: 0;
 }
@@ -13,14 +13,15 @@ body {
     max-width: 500px;
     margin: 50px auto;
     padding: 30px;
-    background-color: #fff;
+    background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #007bff;
+    color: #333;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .form-group {
@@ -30,7 +31,8 @@ h1 {
 label {
     display: block;
     font-weight: bold;
-    color: #333;
+    color: #555;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 input[type="text"],
@@ -44,6 +46,7 @@ input[type="file"] {
     border-radius: 5px;
     box-sizing: border-box;
     margin-top: 5px;
+    background-color: #f1f1f1;
 }
 
 textarea {
@@ -52,8 +55,8 @@ textarea {
 
 button {
     width: 100%;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
     border: none;
     cursor: pointer;
     padding: 12px 20px;
@@ -62,13 +65,14 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
 }
 
 </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>개인 정보 입력</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -107,3 +111,4 @@ button:hover {
     </div>
 </body>
 </html>
+
